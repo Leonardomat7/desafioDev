@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Upload de Arquivos XML</h2>
+    <form (ngSubmit)="uploadFile()" #fileUploadForm="ngForm">
+      <div class="form-group">
+        <label for="file">Selecione o arquivo XML:</label>
+        <input type="file" id="file" name="file" (change)="handleFileInput($event)" accept=".xml" required />
+      </div>
+      <button type="submit" [disabled]="uploading || !fileInput">Enviar</button>
+  
+      <!-- Exibir mensagem de erro -->
+      <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+      </div>
+  
+      <!-- Exibir mensagem de sucesso -->
+      <div *ngIf="serverResponse" class="success-message">
+        {{ serverResponse }}
+      </div>
+  
+     
+    </form>
+  </div>
+  
