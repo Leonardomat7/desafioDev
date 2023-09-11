@@ -45,4 +45,4 @@ Acesse o aplicativo no navegador em http://localhost:4200 e utilize-o conforme o
 Banco de Dados
 O banco de dados utilizado é o H2, um banco de dados em memória. Os dados serão armazenados temporariamente durante a execução do sistema.
 
-Foram realizado os testes unitarios em junit 5 com mockito.
+Foram realizados testes unitarios em junit 5 com mockito.
